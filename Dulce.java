@@ -6,4 +6,8 @@ public class Dulce extends Producto {
         this.nombre = nombre;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
 }
