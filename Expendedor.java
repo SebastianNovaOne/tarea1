@@ -32,5 +32,13 @@ public class Expendedor {
             depositoVuelto.agregar(moneda);
             throw new PagoInsuficienteException("Pago insuficiente.");
         }
+
+        Producto prod = depositos[indice].retirar();
+        if (prod == null) {
+            depositoVuelto.agregar(moneda);
+            throw new NoHayProductoException("Sin stock.");
+        }
+
+        
     }
 }
