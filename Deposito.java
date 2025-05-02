@@ -6,4 +6,8 @@ public class Deposito<T> {
     public Deposito() {
         items = new ArrayList<>();
     }
+
+    public void agregar(T item){
+        items.add(item);
+    }
 }
