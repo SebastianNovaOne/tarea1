@@ -45,6 +45,8 @@ public class Expendedor {
             vuelto -= 100;
         }
 
+        return prod;
+
 
         
     }
