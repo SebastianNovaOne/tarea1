@@ -17,5 +17,12 @@ public class Expendedor {
         if (moneda == null) {
             throw new PagoIncorrectoException("Moneda nula.");
         }
+
+        int indice = producto.ordinal();
+        if (depositos[indice] == null)  {
+            depositoVuelto.agregar(moneda);
+            throw new NoHayProductoException(("No disponible."));
+
+        }
     }
 }
