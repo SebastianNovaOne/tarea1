@@ -5,4 +5,8 @@ public class Bebida extends Producto {
         super(precio);
         this.nombre = nombre;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
 }
