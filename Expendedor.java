@@ -39,6 +39,13 @@ public class Expendedor {
             throw new NoHayProductoException("Sin stock.");
         }
 
+        int vuelto = pago - precio;
+        while (vuelto >= 100) {
+            depositoVuelto.agregar(new Moneda100());
+            vuelto -= 100;
+        }
+
+
         
     }
 }
