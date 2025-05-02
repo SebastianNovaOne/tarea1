@@ -24,5 +24,8 @@ public class Expendedor {
             throw new NoHayProductoException(("No disponible."));
 
         }
+
+        int precio = producto.getPrecio();
+        int pago = moneda.getValor();
     }
 }
