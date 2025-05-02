@@ -44,7 +44,5 @@ public class Expendedor {
             depositoVuelto.agregar(new Moneda100());
             vuelto = vuelto - 100;
         }
-
-        return prod;
     }
 }
