@@ -51,4 +51,21 @@ public class Expendedor {
     public Moneda getVuelto() {
         return depositoVuelto.retirar();
     }
+
+    private Producto crearProducto(ProductoEnum producto) {
+        switch (producto) {
+            case COCACOLA:
+                return new Bebida("CocaCola", producto.getPrecio());
+            case SPRITE:
+                return new Bebida("Sprite", producto.getPrecio());
+            case FANTA:
+                return new Bebida("CocaCola", producto.getPrecio());
+            case SNICKERS:
+                return new Bebida("Fanta", producto.getPrecio());
+            case SUPER8:
+                return new Dulce("Super8", producto.getPrecio());
+            default:
+                return null;
+        }
+    }
 }
