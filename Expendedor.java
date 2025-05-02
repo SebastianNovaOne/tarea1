@@ -27,5 +27,10 @@ public class Expendedor {
 
         int precio = producto.getPrecio();
         int pago = moneda.getValor();
+
+        if (pago < precio) {
+            depositoVuelto.agregar(moneda);
+            throw new PagoInsuficienteException("Pago insuficiente.");
+        }
     }
 }
