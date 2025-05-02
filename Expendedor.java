@@ -46,8 +46,9 @@ public class Expendedor {
         }
 
         return prod;
+    }
 
-
-        
+    public Moneda getVuelto() {
+        return depositoVuelto.retirar();
     }
 }
