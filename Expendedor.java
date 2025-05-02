@@ -11,4 +11,11 @@ public class Expendedor {
             }
         }
     }
+
+    public Producto comprarProducto(Moneda moneda, ProductoEnum producto)
+            throws PagoIncorrectoException, PagoInsuficienteException, NoHayProductoException {
+        if (moneda == null) {
+            throw new PagoIncorrectoException("Moneda nula.")
+        }
+    }
 }
