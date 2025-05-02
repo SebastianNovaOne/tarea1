@@ -6,4 +6,8 @@ public enum ProductoEnum {
     SUPER8(100),
 
     private final int precio;
+
+    ProductoEnum(int precio) {
+        this.precio = precio;
+    }
 }
