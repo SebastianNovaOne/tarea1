@@ -10,4 +10,9 @@ public class Deposito<T> {
     public void agregar(T item){
         items.add(item);
     }
+
+    public T retirar() {
+        if (items.isEmpty()) return null;
+        return items.remove(0);
+    }
 }
