@@ -14,4 +14,8 @@ public class Comprador {
             }
         }
     }
+
+    public String getProductoConsumido() {
+        return productoConsumido;
+    }
 }
