@@ -21,6 +21,10 @@ public class MainInteractivo {
                 System.out.println("Saliendo");
                 break;
             }
+
+            System.out.print("Ingrese valor de moneda: ");
+            int valorMoneda = scanner.nextInt();
+            Moneda moneda = crearMoneda(valorMoneda);
         }
     }
 }
