@@ -10,6 +10,12 @@ public class MainPrueba {
             Comprador comprador1 = new Comprador(moneda1000, 1, expendedor);
             System.out.println("Producto consumido: " + comprador1.getProductoConsumido());
             System.out.println("Vuelto recibido: $" + comprador1.getVueltoTotal());
+
+            try {
+                Comprador comprador2 = new Comprador(moneda100, 2, expendedor);
+            } catch (PagoInsuficienteException e) {
+                System.out.println(e.getMessage());
+            }
         }
     }
 }
