@@ -37,4 +37,18 @@ public class MainInteractivo {
             }
         }
     }
+
+    private static Moneda crearMoneda(int valor) {
+        switch (valor) {
+            case 100:
+                return new Moneda100();
+            case 500:
+                return new Moneda500();
+            case 1000:
+                return new Moneda1000();
+            default:
+                System.out.println("Moneda no valida.");
+                return null;
+        }
+    }
 }
