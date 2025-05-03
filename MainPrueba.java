@@ -22,6 +22,13 @@ public class MainPrueba {
             } catch (NoHayProductoException e) {
                 System.out.println(e.getMessage());
             }
+
+            try {
+                Comprador comprador4 = new Comprador(null, 4, expendedor);
+            } catch (PagoIncorrectoException e) {
+                System.out.println(e.getMessage());
+            }
+
         }
     }
 }
