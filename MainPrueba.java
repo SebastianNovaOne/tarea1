@@ -1,9 +1,19 @@
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
+/**
+ * Clase principal para realizar pruebas con el expendedor de productos.
+ * Ejecuta pruebas de compra, manejo de excepciones y ordenamiento de monedas.
+ */
 public class MainPrueba {
-    public static void main(String[] args){
+
+    /**
+     * Metodo principal que ejecuta varias pruebas de compra y validacion de excepciones.
+     * Prueba de compra de productos, manejo de pagos insuficientes, productos no disponibles
+     * y monedas nulas. Tambien se ordenan las monedas por su valor.
+     *
+     * @param args
+     */
+    public static void main(String[] args) {
         try {
             Expendedor expendedor = new Expendedor(10);
 
@@ -42,7 +52,6 @@ public class MainPrueba {
 
         } catch (Exception e) {
             e.printStackTrace();
-
         }
     }
 }
