@@ -16,6 +16,12 @@ public class MainPrueba {
             } catch (PagoInsuficienteException e) {
                 System.out.println(e.getMessage());
             }
+
+            try {
+                Comprador comprador3 = new Comprador(moneda500, 3, expendedor);
+            } catch (NoHayProductoException e) {
+                System.out.println(e.getMessage());
+            }
         }
     }
 }
