@@ -1,3 +1,7 @@
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class MainPrueba {
     public static void main(String[] args){
         try {
@@ -28,6 +32,16 @@ public class MainPrueba {
             } catch (PagoIncorrectoException e) {
                 System.out.println(e.getMessage());
             }
+
+            List<Moneda> monedas = Arrays.asList(moneda500, moneda100, moneda1000);
+            Collections.sort(monedas);
+            System.out.println("Monedas ordenadas:");
+            for (Moneda moneda : monedas) {
+                System.out.println(moneda);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
 
         }
     }
