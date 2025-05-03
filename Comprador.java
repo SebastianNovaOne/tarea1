@@ -18,4 +18,8 @@ public class Comprador {
     public String getProductoConsumido() {
         return productoConsumido;
     }
+
+    public int getVueltoTotal() {
+        return totalVuelto;
+    }
 }
