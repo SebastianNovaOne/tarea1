@@ -1,8 +1,14 @@
 import java.util.*;
 
+/**
+ * Clase principal para usar el expendedor de para el usuario.
+ */
 public class MainInteractivo {
 
-    public static void main(String[] args){
+    /**
+     * Metodo principal que permite al usuario comprar productos en un menu interactivo.
+     */
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Expendedor expendedor = new Expendedor(10);
 
@@ -38,6 +44,12 @@ public class MainInteractivo {
         }
     }
 
+    /**
+     * Metodo que crea una moneda segun el valor entregado.
+     *
+     * @param valor el valor de la moneda.
+     * @return una Moneda correspondiente o null si valor no es valido.
+     */
     private static Moneda crearMoneda(int valor) {
         switch (valor) {
             case 100:
