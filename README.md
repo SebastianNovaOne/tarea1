@@ -1,2 +1,2 @@
 # tarea1
-# Sebastian Nova
+# Sebastian Nova Sanchez
