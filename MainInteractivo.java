@@ -25,6 +25,16 @@ public class MainInteractivo {
             System.out.print("Ingrese valor de moneda: ");
             int valorMoneda = scanner.nextInt();
             Moneda moneda = crearMoneda(valorMoneda);
+
+            try {
+                Comprador comprador = new Comprador(moneda, opcion - 1, expendedor);
+                System.out.println("Producto consumido: " + comprador.getProductoConsumido());
+                System.out.println("Vuelto recibido: $" + comprador.getVueltoTotal());
+            }
+
+            catch (PagoIncorrectoException | NoHayProductoException | PagoInsuficienteException e) {
+                System.out.println("Error: " + e.getMessage());
+            }
         }
     }
 }
